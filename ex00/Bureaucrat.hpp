@@ -31,4 +31,6 @@ class Bureaucrat{
 
 };
 
+std::ostream& operator<<(std::ostream& COUT, const Bureaucrat& object);
+
 #endif

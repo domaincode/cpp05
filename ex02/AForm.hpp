@@ -22,6 +22,7 @@ class AForm{
         int get_gradeToSign()const;
         int get_gradeToExecute()const;
         void beSigned(Bureaucrat& object);
+        virtual void execute(Bureaucrat const & executor) const = 0;
 
         class GradeTooHighException: public std::exception
         {
@@ -36,5 +37,7 @@ class AForm{
 
 
 };
+
+std::ostream& operator<<(std::ostream& os, const AForm& object);
 
 #endif

@@ -80,3 +80,16 @@ const char* Form::GradeTooLowException::what()const throw(){
 
     return "Form: Grade Too Low !!!\n";
 }
+
+
+////// << overloading ////////////////////////
+
+std::ostream& operator<<(std::ostream& os, const Form& object)
+{
+    os << "---------Form information------------\n";
+    os << "Name: " << object.get_Name() << std::endl;
+    os << "Signed: " << (object.get_Status() ? "yes\n": "No\n");
+    os << "Grade Required To Sign it: " << object.get_gradeToSign() << std::endl;
+    os << "Grade Required To Execute it: " << object.get_gradeToExecute();
+    return os;
+}

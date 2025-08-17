@@ -1,11 +1,5 @@
 #include "Bureaucrat.hpp"
 
-std::ostream& operator<<(std::ostream& COUT, const Bureaucrat& object)
-{
-    std::cout << object.getName() << ", bureaucrat grade " << object.getGrade();
-    return COUT;
-}
-
 void test0()
 {
     Bureaucrat kid("John", 1);
