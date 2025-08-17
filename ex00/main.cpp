@@ -65,9 +65,14 @@ void test4()
 
 int main()
 {
-   test0();
-//    test1();
-//    test2();
-//     test3();
-//    test4();
+  std::cout << "\033[32mTest0\033[0m\n";
+    test0();
+  std::cout << "\n\033[32mTest1\033[0m\n";
+     test1();
+  std::cout << "\n\033[32mTest2\033[0m\n";
+     test2();
+  std::cout << "\n\033[32mTest3\033[0m\n";
+      test3();
+  std::cout << "\n\033[32mTest4\033[0m\n";
+      test4();
 }

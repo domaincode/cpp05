@@ -61,7 +61,7 @@ int AForm::get_gradeToExecute()const
 
 //////  beSigned()  ///////////////////////////////////////////////////
 
-void AForm::beSigned(Bureaucrat& object)
+void AForm::beSigned(const Bureaucrat& object)
 {
     if(object.getGrade() <= grade_to_sign)
         is_signed = true;
@@ -69,7 +69,7 @@ void AForm::beSigned(Bureaucrat& object)
         throw AForm::GradeTooLowException();
 }
 
-/// Exception  ////////////////////////////////////////////////
+/// Exception   ////////////////////////////////////////////////
 
 const char* AForm::GradeTooHighException::what()const throw(){
 
@@ -79,6 +79,16 @@ const char* AForm::GradeTooHighException::what()const throw(){
 const char* AForm::GradeTooLowException::what()const throw(){
 
     return "AForm: Grade Too Low !!!\n";
+}
+
+const char* AForm::OpenFailed::what()const throw(){
+    
+    return "Failed to open the file\n";
+}
+
+const char* AForm::NotSigned::what()const throw(){
+    
+    return "Form Not Signed Yet\n";
 }
 
 

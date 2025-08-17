@@ -1,6 +1,6 @@
 SRCC = $(wildcard *.cpp)
 OBJ = $(SRCC:.cpp=.o)
-CFLAGS = -std=c++98 -Wall -Wextra -Werror
+CFLAGS = -std=c++98 
 NAME = Bureaucrat
 
 %.o: %.cpp
