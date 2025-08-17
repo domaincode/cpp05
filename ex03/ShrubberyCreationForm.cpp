@@ -12,7 +12,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string& target)
-:AForm("ShrubberyCreationForm", 145, 137), target(target)
+:AForm("Shrubbery Creation", 145, 137), target(target)
 {
 
 }

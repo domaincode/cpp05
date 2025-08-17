@@ -12,7 +12,7 @@ PresidentialPardonForm::~PresidentialPardonForm()
 }
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string& target)
-:AForm("PresidentialPardonForm", 25, 5), target(target)
+:AForm("Presidential Pardon", 25, 5), target(target)
 {
 
 }
